@@ -26,6 +26,37 @@ var lowerCase = confirm("Would you like lower case characters in your password?"
 var specialCharacters = confirm("Would you like Special Characters in your password?");
 
 
+// conditionals statments of previous arrays
+
+if (numberAmount) {
+    resultArray = resultArray.concat(numberAmount);
+
+}
+if (upperCase) {
+    resultArray = resultArray.concat(upperCaseArray);
+
+}
+
+if (lowerCase) {
+    resultArray = resultArray.concat(lowerCaseArray);
+
+}
+
+if (specialCharacters) {
+    resultArray = resultArray.concat(specialCharactersArray);
+}
+console.log(resultArray)
+
+
+for (var i = 0; i < amountCharacters; i++) {
+
+    userArray.push(resultArray[Math.floor(Math.random() * resultArray.length)]);
+}
+
+return userArray.join("");
+}
+
+
 
 
 // Get references to the #generate element
