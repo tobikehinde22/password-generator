@@ -1,16 +1,23 @@
 // Assignment code here
-function generatePassword() {
-
-}
+// variable starts
+var amountCharacter;
+var numberAmount;
+var upperCase;
+var lowerCase;
+var specialCharacters;
 
 // make array of all characters to be used
-var upperArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+function generatePassword() {
+    var upperArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
-var lowerArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    var lowerArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-var numberArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+    var numberArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
-var specialArray = ["@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+"];
+    var specialArray = ["@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+"];
+
+
+}
 
 //array place holders
 var responseArray = [];
@@ -26,34 +33,36 @@ var lowerCase = confirm("Would you like lower case characters in your password?"
 var specialCharacters = confirm("Would you like Special Characters in your password?");
 
 
-// conditionals statments of previous arrays
+// conditional statments of previous arrays
 
 if (numberAmount) {
-    resultArray = resultArray.concat(numberAmount);
+    responseArray = responseArray.concat(numberAmount);
 
 }
 if (upperCase) {
-    resultArray = resultArray.concat(upperCaseArray);
+    responseArray = responseArray.concat(upperCase);
 
 }
 
 if (lowerCase) {
-    resultArray = resultArray.concat(lowerCaseArray);
+    responseArray = responseArray.concat(lowerCaseArray);
 
 }
 
 if (specialCharacters) {
-    resultArray = resultArray.concat(specialCharactersArray);
+    responseArray = responseArray.concat(specialCharactersArray);
 }
-console.log(resultArray)
+console.log(responseArray)
 
 
 for (var i = 0; i < amountCharacters; i++) {
 
-    userArray.push(resultArray[Math.floor(Math.random() * resultArray.length)]);
+    clientArray.push(responseArray[Math.floor(Math.random() * responseArray.length)]);
 }
 
-return userArray.join("");
+function generatePassword() {
+
+    return clientArray.join("");
 }
 
 
